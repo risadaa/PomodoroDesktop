@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "PomodoroDesktop", "PomodoroDesktop\PomodoroDesktop.vbproj", "{1B93355F-7F39-41FF-9800-E48A3486FDF1}"
+EndProject
+Project("{6141683F-8A12-4E36-9623-2EB02B2C2303}") = "SetupPomodoroDesktop", "SetupPomodoroDesktop\SetupPomodoroDesktop.isproj", "{28466A9C-1E1B-4E91-8007-8073BBADB0F8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1B93355F-7F39-41FF-9800-E48A3486FDF1} = {1B93355F-7F39-41FF-9800-E48A3486FDF1}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CD_ROM|Any CPU = CD_ROM|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		DVD-5|Any CPU = DVD-5|Any CPU
+		Release|Any CPU = Release|Any CPU
+		SingleImage|Any CPU = SingleImage|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B93355F-7F39-41FF-9800-E48A3486FDF1}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{1B93355F-7F39-41FF-9800-E48A3486FDF1}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
+		{1B93355F-7F39-41FF-9800-E48A3486FDF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B93355F-7F39-41FF-9800-E48A3486FDF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B93355F-7F39-41FF-9800-E48A3486FDF1}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B93355F-7F39-41FF-9800-E48A3486FDF1}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
+		{1B93355F-7F39-41FF-9800-E48A3486FDF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B93355F-7F39-41FF-9800-E48A3486FDF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B93355F-7F39-41FF-9800-E48A3486FDF1}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{1B93355F-7F39-41FF-9800-E48A3486FDF1}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+		{28466A9C-1E1B-4E91-8007-8073BBADB0F8}.CD_ROM|Any CPU.ActiveCfg = CD_ROM
+		{28466A9C-1E1B-4E91-8007-8073BBADB0F8}.CD_ROM|Any CPU.Build.0 = CD_ROM
+		{28466A9C-1E1B-4E91-8007-8073BBADB0F8}.Debug|Any CPU.ActiveCfg = DVD-5
+		{28466A9C-1E1B-4E91-8007-8073BBADB0F8}.Debug|Any CPU.Build.0 = DVD-5
+		{28466A9C-1E1B-4E91-8007-8073BBADB0F8}.DVD-5|Any CPU.ActiveCfg = DVD-5
+		{28466A9C-1E1B-4E91-8007-8073BBADB0F8}.DVD-5|Any CPU.Build.0 = DVD-5
+		{28466A9C-1E1B-4E91-8007-8073BBADB0F8}.Release|Any CPU.ActiveCfg = SingleImage
+		{28466A9C-1E1B-4E91-8007-8073BBADB0F8}.Release|Any CPU.Build.0 = SingleImage
+		{28466A9C-1E1B-4E91-8007-8073BBADB0F8}.SingleImage|Any CPU.ActiveCfg = SingleImage
+		{28466A9C-1E1B-4E91-8007-8073BBADB0F8}.SingleImage|Any CPU.Build.0 = SingleImage
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
