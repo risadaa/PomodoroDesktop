@@ -1,0 +1,8 @@
+Este programa foi criado no Visual Studio 2015 Professional, 
+o projeto pode ser aberto no Visual Studio Community, 
+o projeto de setup foi feito com o Install Shield da flexera 
+caso queira utilizar o mesmo o complemento do Install shield 
+deve ser instalado no visual studio, este passo é opcional.
+
+Caso o programa tenha problemas para inicializar no Windows 10
+favor inicia-lo como administrador.
