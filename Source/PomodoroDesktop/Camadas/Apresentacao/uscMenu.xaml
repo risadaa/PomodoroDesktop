@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="uscMenu"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PomodoroDesktop"
+             Foreground="Red" FontFamily="Consola" FontWeight="Bold" FontSize="16"
+             Background="#11CCCCCC"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="500">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="90*"></ColumnDefinition>
+            <ColumnDefinition Width="10*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10*"></RowDefinition>
+                <RowDefinition Height="80*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBlock Name="lblNotas" Text="Tarefas"  HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0"></TextBlock>
+            <StackPanel Name="stkTarefas" Grid.Row="1" Margin="5"></StackPanel>
+        </Grid>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="25*"></RowDefinition>
+                <RowDefinition Height="15*"></RowDefinition>
+                <RowDefinition Height="15*"></RowDefinition>
+                <RowDefinition Height="15*"></RowDefinition>
+                <RowDefinition Height="15*"></RowDefinition>
+                <RowDefinition Height="15*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Image Name="imgFechar" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="top"  Height="24" Margin="5" Cursor="Hand" Source="/PomodoroDesktop;component/Resources/cancelar.png" ToolTip="Fechar"></Image>
+            <Image Name="imgStop" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center"  Height="24" Margin="5" Cursor="Hand" Source="/PomodoroDesktop;component/Resources/stop.png" ToolTip="Parar"></Image>
+            <Image Name="imgAbout" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center"  Height="24" Margin="5" Cursor="Hand" Source="/PomodoroDesktop;component/Resources/About.png" ToolTip="Sobre"></Image>
+            <Image Name="imgConfig" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center"  Height="24" Margin="5" Cursor="Hand" Source="/PomodoroDesktop;component/Resources/gears.png" ToolTip="Configurações"></Image>
+            <Image Name="imgNota" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center"  Height="24" Margin="5" Cursor="Hand" Source="/PomodoroDesktop;component/Resources/edit.png" ToolTip="Notas"></Image>
+            <Image Name="imgSair" Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Center"  Height="24" Margin="5" Cursor="Hand" Source="/PomodoroDesktop;component/Resources/exit.png" ToolTip="Sair"></Image>
+        </Grid>
+    </Grid>
+</UserControl>

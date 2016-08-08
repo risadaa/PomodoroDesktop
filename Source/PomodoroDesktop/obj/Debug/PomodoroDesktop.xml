@@ -1,0 +1,406 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+PomodoroDesktop
+</name>
+</assembly>
+<members>
+<member name="T:PomodoroDesktop.My.MyWpfExtension">
+ <summary>
+ Module used to define the properties that are available in the My Namespace for WPF
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:PomodoroDesktop.My.MyWpfExtension.Application">
+ <summary>
+ Returns the application object for the running application
+ </summary>
+</member>
+<member name="P:PomodoroDesktop.My.MyWpfExtension.Computer">
+ <summary>
+ Returns information about the host computer.
+ </summary>
+</member>
+<member name="P:PomodoroDesktop.My.MyWpfExtension.User">
+ <summary>
+ Returns information for the current user.  If you wish to run the application with the current 
+ Windows user credentials, call My.User.InitializeWithWindowsUser().
+ </summary>
+</member>
+<member name="P:PomodoroDesktop.My.MyWpfExtension.Log">
+ <summary>
+ Returns the application log. The listeners can be configured by the application's configuration file.
+ </summary>
+</member>
+<member name="P:PomodoroDesktop.My.MyWpfExtension.Windows">
+ <summary>
+ Returns the collection of Windows defined in the project.
+ </summary>
+</member>
+<member name="T:PomodoroDesktop.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:PomodoroDesktop.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:PomodoroDesktop.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:PomodoroDesktop.My.Resources.Resources.gloConfig">
+<summary>
+  Looks up a localized string similar to Configuração.
+</summary>
+</member>
+<member name="P:PomodoroDesktop.My.Resources.Resources.gloJobs">
+<summary>
+  Looks up a localized string similar to Tarefas.
+</summary>
+</member>
+<member name="P:PomodoroDesktop.My.Resources.Resources.gloSave">
+<summary>
+  Looks up a localized string similar to Salvar.
+</summary>
+</member>
+<member name="P:PomodoroDesktop.My.Resources.Resources.Tomato">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:PomodoroDesktop.uscAbout">
+<summary>
+uscAbout
+</summary>
+</member>
+<member name="M:PomodoroDesktop.uscAbout.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:PomodoroDesktop.uscNota">
+<summary>
+uscNota
+</summary>
+</member>
+<member name="M:PomodoroDesktop.uscNota.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:PomodoroDesktop.uscConfig">
+<summary>
+uscConfig
+</summary>
+</member>
+<member name="M:PomodoroDesktop.uscConfig.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:PomodoroDesktop.uscInicial">
+<summary>
+uscInicial
+</summary>
+</member>
+<member name="M:PomodoroDesktop.uscInicial.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:PomodoroDesktop.Application">
+<summary>
+Application
+</summary>
+</member>
+<member name="M:PomodoroDesktop.Application.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="M:PomodoroDesktop.Application.Main">
+<summary>
+Application Entry Point.
+</summary>
+</member>
+<member name="T:PomodoroDesktop.clsPomodoro">
+ <summary>
+ Classe clsPomodoro
+ Autor: Kelvysb
+ Data: 03/08/2016
+ Finalidade: Classe do pomodoro
+ Cliente: Kelvys
+ Tarefa: 0000
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:PomodoroDesktop.clsPomodoro.fnToXml">
+ <summary>
+ Converte o objeto em Xml
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:PomodoroDesktop.clsPomodoro.sbMontaPorXml(System.Xml.Linq.XDocument)">
+ <summary>
+ Cria o objeto apartir de um xml
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:PomodoroDesktop.clsPomodoro.Clone">
+ <summary>
+ Cria um clone do objeto
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:PomodoroDesktop.clsPomodoro.Concluido">
+ <summary>
+ Se a o pomodoro foi concluido
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:PomodoroDesktop.clsPomodoro.Inicio">
+ <summary>
+ Data Hora do inicio da Tarefa
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:PomodoroDesktop.clsPomodoro.Fim">
+ <summary>
+ Data Hora do Fim da Tarefa
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:PomodoroDesktop.clsPomodoro.Duracao">
+ <summary>
+ Duracao do pomodoro
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:PomodoroDesktop.clsPomodoro.Tarefas">
+ <summary>
+ Tarefas do pomodoro
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:PomodoroDesktop.clsPomodoro.TarefasIntervalo">
+ <summary>
+ Tarefas do proximo intervalo
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:PomodoroDesktop.clsTarefa">
+ <summary>
+ Classe clsTarefa
+ Autor: Kelvysb
+ Data: 03/08/2016
+ Finalidade: Classe de Tarefa
+ Cliente: Kelvys
+ Tarefa: 0000
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:PomodoroDesktop.clsTarefa.fnToXml">
+ <summary>
+ Converte o objeto em Xml
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:PomodoroDesktop.clsTarefa.sbMontaPorXml(System.Xml.Linq.XDocument)">
+ <summary>
+ Cria o objeto apartir de um xml
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:PomodoroDesktop.clsTarefa.Clone">
+ <summary>
+ Cria um clone do objeto
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:PomodoroDesktop.clsTarefa.Concluida">
+ <summary>
+ Se a Tarefa foi concluida
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:PomodoroDesktop.clsTarefa.Descricao">
+ <summary>
+ Descricao da Tarefa
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:PomodoroDesktop.clsTarefa.Inicio">
+ <summary>
+ Data Hora do inicio da Tarefa
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:PomodoroDesktop.clsTarefa.Fim">
+ <summary>
+ Data Hora do Fim da Tarefa
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:PomodoroDesktop.clsPomodoroConfig">
+ <summary>
+ Classe clsPomodoroConfig
+ Autor: Kelvysb
+ Data: 03/08/2016
+ Finalidade: Classe de configuração do pomodoro desktop
+ Cliente: Kelvys
+ Tarefa: 0000
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:PomodoroDesktop.clsPomodoroConfig.fnToXml">
+ <summary>
+ Converte o objeto em Xml
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:PomodoroDesktop.clsPomodoroConfig.sbMontaPorXml(System.Xml.Linq.XDocument)">
+ <summary>
+ Cria o objeto apartir de um xml
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:PomodoroDesktop.clsPomodoroConfig.Clone">
+ <summary>
+ Cria um clone do objeto
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:PomodoroDesktop.clsPomodoroConfig.TempoPomodoro">
+ <summary>
+ Tempo em minutos de cada pomodoro
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:PomodoroDesktop.clsPomodoroConfig.QuantidadePomodoro">
+ <summary>
+ Quantidades de pomodoros antes do intervalo maior
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:PomodoroDesktop.clsPomodoroConfig.TempoIntervaloMenor">
+ <summary>
+ Tempo do intervalo menor
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:PomodoroDesktop.clsPomodoroConfig.TempoIntervaloMaior">
+ <summary>
+ Tempo do intervalo menor
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:PomodoroDesktop.clsPomodoroConfig.PosicaoTela">
+ <summary>
+ Posicao na tela
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:PomodoroDesktop.clsPomodoroConfig.SempreVisivel">
+ <summary>
+ Se e sempre visível
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:PomodoroDesktop.clsPomodoroConfig.AlertaSonoro">
+ <summary>
+ Se toca um alerta sonoro
+ </summary>
+ <returns></returns>
+</member>
+<member name="T:PomodoroDesktop.uscItemLista">
+<summary>
+uscItemLista
+</summary>
+</member>
+<member name="M:PomodoroDesktop.uscItemLista.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:PomodoroDesktop.uscItemMarcar">
+<summary>
+uscItemMarcar
+</summary>
+</member>
+<member name="M:PomodoroDesktop.uscItemMarcar.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:PomodoroDesktop.uscMenu">
+<summary>
+uscMenu
+</summary>
+</member>
+<member name="M:PomodoroDesktop.uscMenu.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="P:PomodoroDesktop.negPomodoro.Configuracao">
+ <summary>
+ Configuração
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:PomodoroDesktop.negPomodoro.Pomodoros">
+ <summary>
+ Pomodoros
+ </summary>
+ <returns></returns>
+</member>
+<member name="T:PomodoroDesktop.PomodoroDesktop">
+<summary>
+PomodoroDesktop
+</summary>
+</member>
+<member name="M:PomodoroDesktop.PomodoroDesktop.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+</members>
+</doc>
